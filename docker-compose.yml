@@ -7,7 +7,7 @@ services:
 #      - MYSQL_ROOT_PASSWORD=root
 #      - MYSQL_DATABASE=todolist
   web:
-    build: todo
+    build: todo-web
     ports:
       - "80:80"
   todo:
