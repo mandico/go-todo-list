@@ -1,0 +1,14 @@
+services:
+#  mysql:
+#    image: mysql
+#    ports:
+#      - 3306:3306
+#    environment:
+#      - MYSQL_ROOT_PASSWORD=root
+#      - MYSQL_DATABASE=todolist
+  web:
+    build: todo
+    ports:
+      - "80:80"
+  todo:
+    build: .
